@@ -7,7 +7,7 @@
 
 body {
   color: #212c41;
-  width: 1220px;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -16,18 +16,20 @@ body section {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #dfe6f8;
-  background-position: top;
 }
 
 body section .text {
   color: #a19fbd;
   font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: -0.9px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
 }
 
 body section .container {
-  padding: 20% 0;
+  padding: 7% 0;
+  width: 340px;
+  margin: auto;
 }
 
 body section .container .card {
@@ -43,13 +45,11 @@ body section .container .card {
           align-items: center;
   background-color: #fff;
   text-align: center;
-  width: 30%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: auto;
   border-radius: 15px;
-  -webkit-box-shadow: 0 7px 11px -7px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 7px 11px -7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 14px 29px -10px rgba(56, 42, 225, 0.3);
+          box-shadow: 0 14px 29px -10px rgba(56, 42, 225, 0.3);
   overflow: hidden;
 }
 
@@ -115,6 +115,7 @@ body section .container .card .price-box .change:link {
 body section .container .card .cancel:link {
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.8rem;
 }
 
 body section .container .card .btn {
@@ -132,10 +133,41 @@ body section .container .card .btn {
   border: none;
   padding: 12px 10px;
   border-radius: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+body section .container .card .btn:hover {
+  background-color: #766cf1;
 }
 
 body section .container .card .cancel {
   padding-bottom: 40px;
+}
+
+body section .container .card .cancel:hover {
+  color: #212c41;
+}
+
+@media (max-width: 1100px) {
+  body {
+    width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    margin: 0 0;
+    width: auto;
+  }
+  body section {
+    background: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #dfe6f8;
+  }
+  body section .container {
+    width: 90%;
+    padding: 16% 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

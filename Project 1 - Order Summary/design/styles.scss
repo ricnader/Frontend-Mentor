@@ -11,9 +11,7 @@ $tertiary: #fff;
 
 body {
   color: $secondary;
-
-  // background-position: center;
-  width: 1220px;
+  width: 65%;
   margin: 0 auto;
 
   section {
@@ -21,18 +19,19 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #dfe6f8;
-    background-position: top;
 
     .text {
       color: #a19fbd;
       font-size: 0.9rem;
       font-weight: 500;
-      letter-spacing: -0.9px;
+      letter-spacing: 0.2px;
+      line-height: 22px;
     }
 
     .container {
-      padding: 20% 0;
-      // padding: 15% 10%;
+      padding: 7% 0;
+      width: 340px;
+      margin: auto;
 
       .card {
         display: flex;
@@ -40,11 +39,10 @@ body {
         align-items: center;
         background-color: #fff;
         text-align: center;
-        width: 30%;
         justify-content: space-around;
-        margin: auto;
+
         border-radius: 15px;
-        box-shadow: 0 7px 11px -7px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 14px 29px -10px rgba(56, 42, 225, 0.3px);
         overflow: hidden;
 
         .title {
@@ -62,8 +60,6 @@ body {
           overflow: hidden;
           background-size: contain;
           background-repeat: no-repeat;
-
-          // background-position: top;
         }
 
         .price-box {
@@ -98,6 +94,7 @@ body {
         .cancel:link {
           text-decoration: none;
           font-weight: 700;
+          font-size: 0.8rem;
         }
 
         .btn {
@@ -107,18 +104,44 @@ body {
           font-size: 0.8rem;
           font-weight: 600;
           color: $tertiary;
-          // text-shadow: inset 0 0 0 0 rgba(56, 42, 225, 0.5px);
           box-shadow: 0 13px 20px -4px rgba(56, 42, 225, 0.3px);
           text-shadow: 1px 1px white, -2px -2px primary;
           border: none;
           padding: 12px 10px;
           border-radius: 7px;
-          margin-bottom: 20px;
+          margin-bottom: 22px;
+
+          &:hover {
+            background-color: #766cf1;
+          }
         }
 
         .cancel {
           padding-bottom: 40px;
+
+          &:hover {
+            color: $secondary;
+          }
         }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    width: auto;
+  }
+
+  @media (max-width: 420px) {
+    margin: 0 0;
+    width: auto;
+    section {
+      background: url("../images/pattern-background-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: #dfe6f8;
+
+      .container {
+        width: 90%;
+        padding: 16% 0;
       }
     }
   }
