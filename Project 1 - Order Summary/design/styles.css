@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+body {
+  color: #212c41;
+  width: 1220px;
+  margin: 0 auto;
+}
+
+body section {
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #dfe6f8;
+  background-position: top;
+}
+
+body section .text {
+  color: #a19fbd;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+}
+
+body section .container {
+  padding: 20% 0;
+}
+
+body section .container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-align: center;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 7px 11px -7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 7px 11px -7px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+body section .container .card .title {
+  letter-spacing: -1.5px;
+  margin: 7px 0;
+}
+
+body section .container .card .description {
+  padding: 0 10% 5% 10%;
+}
+
+body section .container .card .hero-img {
+  height: 200px;
+  width: 100%;
+  background: url("../images/illustration-hero.svg");
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body section .container .card .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  background-color: #f8f9fe;
+  padding: 15px;
+  margin-bottom: 28px;
+  border-radius: 7px;
+}
+
+body section .container .card .price-box .subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+body section .container .card .price-box .subscription .subscription-method {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+body section .container .card .price-box .subscription .subscription-value {
+  font-weight: 600;
+}
+
+body section .container .card .price-box .change:link {
+  font-size: 0.8rem;
+}
+
+body section .container .card .cancel:link {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+body section .container .card .btn {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #392ae1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  -webkit-box-shadow: 0 13px 20px -4px rgba(56, 42, 225, 0.3);
+          box-shadow: 0 13px 20px -4px rgba(56, 42, 225, 0.3);
+  text-shadow: 1px 1px white, -2px -2px primary;
+  border: none;
+  padding: 12px 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+body section .container .card .cancel {
+  padding-bottom: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
