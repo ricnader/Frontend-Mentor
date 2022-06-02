@@ -7,7 +7,6 @@
 
 body {
   color: #212c41;
-  width: 65%;
   margin: 0 auto;
 }
 
@@ -16,6 +15,7 @@ body section {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #dfe6f8;
+  height: 100vh;
 }
 
 body section .text {
